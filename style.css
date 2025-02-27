@@ -1,0 +1,169 @@
+/* Seção inicial com imagem de fundo e gradiente */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Define a altura da primeira parte */
+    background: linear-gradient(to bottom, rgba(7, 26, 46, 0.8), rgb(3, 3, 20)), url('background.png') no-repeat center center; /* Gradiente e imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 40px; /* Aumentei o padding para mais espaço */
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero-section h1 {
+    font-size: 3em; /* Aumentei o tamanho do título */
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.5em; /* Aumentei o tamanho da fonte do parágrafo */
+    margin-top: 15px; /* Aumentei a margem superior */
+}
+
+.botao {
+    margin-top: 30px; /* Aumentei a margem superior */
+    padding: 15px 30px; /* Aumentei o padding para tornar o botão mais chamativo */
+    font-size: 1.5em; /* Aumentei o tamanho da fonte do botão */
+    background-color: #00e20b;
+    color: white;
+    border: none;
+    border-radius: 8px; /* Alterei o raio da borda para um visual mais suave */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Adicionei box-shadow na transição */
+}
+
+.botao:hover {
+    background-color: #008817;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2); /* Efeito de sombra no hover */
+}
+
+/* Seção seguinte */
+.content-section {
+    background:rgb(3, 3, 20);
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    width: 100%;
+    gap: 40px;
+}
+
+.foto1 {
+    width: 400px;
+    height: 250px;
+    background: url('foto1.png') no-repeat center center; /* Substitua pela sua imagem */
+    background-size: cover; 
+    border-radius: 10px; 
+}
+
+.text-content {
+    flex: 1; 
+}
+
+.titulo2 {
+    font-size: 2.5em; /* Aumentei o tamanho do título na seção seguinte */
+    color:#ffffff; 
+}
+
+.paragrafo2 { 
+    font-size :1.2em; 
+    color:#ffffff; 
+}
+
+/* Regras de responsividade */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 400px; /* Ajusta a altura para telas menores */
+        padding: 20px; /* Diminui o padding */
+    }
+
+    .hero-section h1 {
+        font-size: 2em; /* Reduz o tamanho do título */
+    }
+
+    .hero-section p {
+        font-size: 1.2em; /* Reduz o tamanho da fonte do parágrafo */
+    }
+
+    .botao {
+        padding: 10px 20px; /* Ajusta o padding do botão */
+        font-size: 1.2em; /* Reduz o tamanho da fonte do botão */
+    }
+
+    .content-section {
+        padding: 40px 5%; /* Ajusta o padding da seção seguinte */
+    }
+
+    .content-container {
+        flex-direction: column; /* Muda a direção do layout para coluna */
+        gap: 20px; /* Ajusta o espaçamento */
+    }
+
+    .foto1 {
+        width: 100%; /* Ajusta a largura da imagem */
+        height: auto; /* Ajusta a altura da imagem */
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .titulo2 {
+        font-size: 2em; /* Reduz o tamanho do título na seção seguinte */
+    }
+
+}
+.consultoria {
+    color: #ffee00; /* Verde escuro */
+    font-weight: bold;
+  
+    padding: 5px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+}
+.foto2 {
+    width: 400px; /* Largura da imagem */
+    height: 250px; /* Altura da imagem */
+    background: url('foto2.png') no-repeat center center; /* Substitua pela sua imagem */
+    background-size: cover; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+body {
+   font-family: Arial, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    color: white;
+}
+
+.icon {
+    color: green;
+    margin-right: 10px;
+}
+.titulo3 {
+    font-size: 2.5em; /* Aumentei o tamanho do título na seção seguinte */
+    color:#ffffff; 
+}
+
+.paragrafo3 { 
+    font-size :1.2em; 
+    color:#ffffff; 
+}
